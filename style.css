@@ -1,0 +1,46 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #37277b, #934242);
+    flex-direction: column;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: #ccc;
+    width: 6em;
+    height: 3em;
+    margin: 0.5em 0.3em;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px darkred;
+    font-weight: bold;
+}
+
+.clear {
+    position: relative;
+    left: 138px;
+}
+
+.clear_button {
+    background-color: green;
+}
+
+button:active {
+    box-shadow: 1px 1px #666;
+}
+
+#display {
+    width: 355px;
+    height: 2em;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    border-radius: 20px ;
+}

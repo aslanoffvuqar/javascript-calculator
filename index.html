@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <input id="a">
+    <input id="b">
+    <button onclick="value()" id="but"></button>
+    <h2 id="result"></h2>
+
+    <script>
+        let aButton = document.getElementById("a")
+        let bButton = document.getElementById("b")
+        let but = document.getElementById("but")
+        let end = document.getElementById("result")
+        function value() {
+            end.innerHTML = +aButton.velue + +bButton.value
+        }
+
+    </script> -->
+
+
+    <!-- <input id="a">
+    <select id="slc">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input id="b">
+    <button id="btn">=</button>
+    <h3 id="res"></h3>
+    <script>
+        let aInput = document.getElementById("a")
+        let slct = document.getElementById("slc")
+        let bInput = document.getElementById("b")
+        let but = document.getElementById("btn")
+        let res = document.getElementById("res")
+        btn.onclick = function () {
+            res.innerHTML = eval(+a.value + slc.value + +b.value)
+        }
+    </script> -->
+
+
+
+
+    <!-- <input id="a">
+    <button id="btn">?</button>
+    <input id="b">
+    <script>
+        let a = document.getElementById("a")
+        let b = document.getElementById("b")
+        let btn = document.getElementById("btn")
+        btn.onclick = function () {
+            if (+a.value > +b.value) {
+                btn.innerHTML = ">"
+            }
+            else if (a.value == b.value) {
+                btn.innerHTML = "="
+            }
+            else {
+                btn.innerHTML = "<"
+            }
+
+
+        }
+
+
+    </script> -->
+
+    <div><input id="display"></div>
+    <div class="clear">
+        <button class="clear_button"  onclick="clean()">C</button>
+    </div>
+    <div>
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button onclick="press('/')">/</button>
+    </div>
+    <div>
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button onclick="press('*')">*</button>
+    </div>
+    <div>
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button onclick="press('-')">-</button>
+    </div>
+    <div>
+        <button onclick="press('0')">0</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="press('+')">+</button>
+        <button onclick="calc()">=</button>
+    </div>
+    </div>
+
+
+
+    <script>
+        const display = document.getElementById("display")
+        function calc() {
+            display.value = eval(display.value)
+        }
+        function press(x) {
+            display.value += x
+        }
+        function clean() {
+            display.value = ""
+        }
+    </script>
+
+    <!-- <input id="a">
+    <input id="b">
+    <input id="c">
+    <button onclick="plus()" id="btn1">+</button>
+    <button onclick="center()" id="btn2">ort</button>
+    <button onclick="smool()" id="btn3">kck</button>
+    <button onclick="large()" id="btn4">byk</button>
+    <h2 id="demo"></h2>
+    <script>
+        let a = document.getElementById("a")
+        let b = document.getElementById("b")
+        let c = document.getElementById("c")
+        let demo = document.getElementById("demo")
+        function plus() {
+            demo.innerHTML = eval(+a.value + +b.value + +c.value)
+
+        }
+        function center() {
+            demo.innerHTML = b.value
+        }
+        function large() {
+            if (+a.value > +b.value && +a.value > +c.value) {
+                demo.innerHTML = a.value
+            }
+            else if (+b.value > a.value && b.value > +c.value) {
+                demo.innerHTML = b.value
+            }
+
+        }
+        function smool() {
+            if (+a.value < +b.value && +a.value < +c.value) {
+                demo.innerHTML = a.value
+            }
+            else if (+b.value < a.value && b.value < +c.value) {
+                demo.innerHTML = b.value
+            }
+
+        }
+    </script> -->
+
+
+    <!-- <input id="a">
+
+    <button onclick="change()" id="btn"></button>
+    <input id="b">
+    <h2 id="demo"></h2>
+    <script>
+        let a = document.getElementById("a")
+        let b = document.getElementById("b")
+        let btn = document.getElementById("change")
+        let demo = document.getElementById("demo")
+        function change() {
+            let chang = a.value
+            a.value = b.value
+            b.value = chang
+        }
+
+
+    </script> -->
+</body>
+
+</html>
